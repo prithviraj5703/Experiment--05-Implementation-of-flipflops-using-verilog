@@ -169,10 +169,10 @@ nand(q,nand1_out,qbar,qbar);
 nand(qbar,nand2_out,q);
 endmodule
 ```
-##RTL LOGIC FOR FLIPFLOPS
+RTL LOGIC FOR FLIPFLOPS
 ![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/b3724d65-5760-418e-b3d9-60992871b301)
 
-##TIMING DIGRAMS FOR FLIP FLOPS
+TIMING DIGRAMS FOR FLIP FLOPS
 ![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/ced6c40a-0392-4b0b-8167-1b6372498507)
 
 ##PROGRAM 3:
@@ -193,10 +193,10 @@ nand(q,n2,qbar);
 nand(qbar,n1,q);
 endmodule 
 ```
-##RTL LOGIC FOR FLIPFLOPS
+RTL LOGIC FOR FLIPFLOPS
 ![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/87c641da-b524-4bd6-9b1c-c3251c004cc4)
 
-##TIMING DIGRAMS FOR FLIP FLOPS
+TIMING DIGRAMS FOR FLIP FLOPS
 ![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/df8ca88f-222d-4824-9943-b6ba82c717fb)
 
 ##PROGRAM 4:
@@ -231,10 +231,10 @@ nand(q,n1,qbar);
 nand(qbar,n2,q);
 endmodule
 ```
-##RTL LOGIC FOR FLIPFLOPS
+RTL LOGIC FOR FLIPFLOPS
 ![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/6108700c-1e92-4118-a103-8fe276702ff6)
 
-##TIMING DIGRAMS FOR FLIP FLOPS
+TIMING DIGRAMS FOR FLIP FLOPS
 ![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/f107bd0f-4b63-4d57-8ca3-72dab9175646)
 
 ### RESULTS 
