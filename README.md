@@ -102,16 +102,36 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+1.Using nand gates and wires construct sr flip flop.
+
+2.Repeat same steps to construct JK,D,T flipflops.
+
+3.Find Rtl logic and timing diagram for all flipflops.
+
+4.end the program.
 
 
 
 ### PROGRAM 
-/*
+```python
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Prithviraj.V
+RegisterNumber:  212222100038
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: THAMARAISELVAN V
+RegisterNumber:  212221230115
+
+module sr (q,qbar,s,r,clk);
+input s,r,clk;
+output q,qbar;
+wire nand1_out;
+wire nand2_out;
+nand(nand1_out,clk,s);
+nand(nand2_out,clk,r);
+nand(q,nand1_out,qbar);
+nand(qbar,nand2_out,q);
+endmodule
+```
 
 
 
@@ -119,7 +139,7 @@ RegisterNumber:
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
-
+![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/65262625-bd26-4aa5-b759-ab65eef8724a)
 
 
 
@@ -130,11 +150,92 @@ RegisterNumber:
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/68e287d7-a364-4646-8d8b-01b9737b9b24)
 
+##PROGRAM 2:
+```python
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: Prithviraj.V
+RegisterNumber:  212222100038
 
+module jk(q,qbar,k,j,clk);
+input j,k,clk;
+output q,qbar;
+wire nand1_out;
+wire nand2_out;
+nand(nand1_out,j,clk,qbar);
+nand(nand2_out,k,clk,q);
+nand(q,nand1_out,qbar,qbar);
+nand(qbar,nand2_out,q);
+endmodule
+```
+##RTL LOGIC FOR FLIPFLOPS
+![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/b3724d65-5760-418e-b3d9-60992871b301)
 
+##TIMING DIGRAMS FOR FLIP FLOPS
+![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/ced6c40a-0392-4b0b-8167-1b6372498507)
 
+##PROGRAM 3:
+```python
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: Prithviraj.V
+RegisterNumber:  212222100038
 
+module d(q,qbar,d1,clk);
+input d1,clk;
+output q,qbar;
+wire n1;
+wire n2;
+not(x,d1);
+nand(n1,clk,d1);
+nand(n2,clk,x);
+nand(q,n2,qbar);
+nand(qbar,n1,q);
+endmodule 
+```
+##RTL LOGIC FOR FLIPFLOPS
+![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/87c641da-b524-4bd6-9b1c-c3251c004cc4)
 
+##TIMING DIGRAMS FOR FLIP FLOPS
+![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/df8ca88f-222d-4824-9943-b6ba82c717fb)
+
+##PROGRAM 4:
+```python
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: Prithviraj.V
+RegisterNumber:  212222100038
+
+module tff(t,qbar,q,clk);
+input t,clk;
+output q,qbar;
+wire n1,n2;
+nand(n1,t,clk,qbar);
+nand(n2,clk,t,q);
+nand(q,n1,qbar);
+nand(qbar,n2,q);
+endmodule
+```
+##PROGRAM 4:
+```python
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: Prithviraj.V
+RegisterNumber:  212222100038
+
+module tff(t,qbar,q,clk);
+input t,clk;
+output q,qbar;
+wire n1,n2;
+nand(n1,t,clk,qbar);
+nand(n2,clk,t,q);
+nand(q,n1,qbar);
+nand(qbar,n2,q);
+endmodule
+```
+##RTL LOGIC FOR FLIPFLOPS
+![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/6108700c-1e92-4118-a103-8fe276702ff6)
+
+##TIMING DIGRAMS FOR FLIP FLOPS
+![image](https://github.com/prithviraj5703/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121418418/f107bd0f-4b63-4d57-8ca3-72dab9175646)
 
 ### RESULTS 
+Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully.
